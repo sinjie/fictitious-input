@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>虚拟数字键盘</title>
+    <link rel="stylesheet" href="./css.css">
+    <style>
+        #fictitious-number {
+            width: 90%;
+            height:60px;
+            font-size: 16px;
+            line-height: 60px;
+            background: #fff;
+            border: 1px solid #999;
+            color: #333;
+            padding: 0 10px;
+            margin: auto;
+        }
+        #btn {
+            background: #fff;
+            margin-top: 10px;
+            width: 100%;
+            padding: 0 10px;
+        }
+    </style>
+    <script src="./js.js"></script>
+</head>
+<body>
+    <div id="fictitious-number"></div>
+    <input id="btn" type="button" value="打印输入值" />
+    <div id="value-content"></div>
+    <script>
+        var ele = document.getElementById('fictitious-number')
+        var numberInput = new FictitiousNumber(ele, {placeholder: '请输入数字'})
+        document.getElementById('btn').onclick = () => {
+            document.getElementById('value-content').innerHTML = numberInput.value
+        }
+    </script>
+</body>
+</html>

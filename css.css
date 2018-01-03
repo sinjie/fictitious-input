@@ -1,0 +1,125 @@
+.fictitious-cursor {
+  border-left: 1px solid #00a0e9;
+  animation: cursor 1300ms linear infinite;
+  -webkit-animation: cursor 1300ms linear infinite;
+  -moz-animation: cursor 1300ms linear infinite;
+  -o-animation: cursor 1300ms linear infinite;
+}
+@keyframes cursor {
+  from {
+    opacity: 1;
+  }
+  49% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  to{
+    opacity: 0;
+  }
+}
+@-webkit-keyframes cursor {
+  from {
+    opacity: 1;
+  }
+  49% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  to{
+    opacity: 0;
+  }
+}
+@-moz-keyframes cursor {
+  from {
+    opacity: 1;
+  }
+  49% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  to{
+    opacity: 0;
+  }
+}
+@-o-keyframes cursor {
+  from {
+    opacity: 1;
+  }
+  49% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  to{
+    opacity: 0;
+  }
+}
+@-ms-keyframes cursor {
+  from {
+    opacity: 1;
+  }
+  49% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  to{
+    opacity: 0;
+  }
+}
+
+#fictitious-keyboard, #fictitious-keyboard * {
+  box-sizing: border-box;
+}
+#fictitious-keyboard {
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  position: fixed;
+  bottom: -205px;
+  transition: bottom 300ms linear;
+  -webkit-transition: bottom 300ms linear;
+  -moz-transition: bottom 300ms linear;
+  -o-transition: bottom 300ms linear;
+}
+#fictitious-keyboard p {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  border-top: 1px solid #aaa;
+  color: #666;
+  font-size: 22px;
+  height: 25px;
+  line-height:30px;
+}
+#fictitious-keyboard span {
+  float: left;
+  height: 45px;
+  width: 33.33%;
+  font-size: 20px;
+  line-height: 45px;
+  text-align: center;
+  border-top: 1px solid #aaa;
+  color: #666;
+}
+#fictitious-keyboard .click {
+  transform: scale(1.1);
+}
+#fictitious-keyboard .middle {
+  border-left: 1px solid #aaa;
+  border-right: 1px solid #aaa;
+}
+#fictitious-keyboard .ot {
+  background: #ddd;
+}
+#fictitious-keyboard.show-animation {
+  bottom: 0;
+}
